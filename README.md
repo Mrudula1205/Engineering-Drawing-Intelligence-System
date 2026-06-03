@@ -71,7 +71,7 @@ graph TD
   ingest --> extract_dims[Extract Dimensions using VLM]
   extract_structured --> validate[Validate & Merge]
   extract_dims --> validate
-  validate --> store[Store (Firestore)]
+  validate --> store[Store in Firestore]
   store --> end_node((END))
 ```
 
