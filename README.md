@@ -68,7 +68,7 @@ The repository implements an asynchronous pipeline with parallel extraction bran
 ```mermaid
 graph TD
   ingest[Ingest] --> extract_structured[Extract Structured Data]
-  ingest --> extract_dims[Extract Dimensions(VLM)]
+  ingest --> extract_dims[Extract Dimensions using VLM]
   extract_structured --> validate[Validate & Merge]
   extract_dims --> validate
   validate --> store[Store (Firestore)]
